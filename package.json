@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@fontsource/zilla-slab": "5.0.14",
-    "@iconify-json/material-symbols": "1.1.89",
+    "@iconify-json/material-symbols": "1.2.42",
     "@iconify-json/mdi": "1.1.68",
     "@iconify-json/simple-icons": "1.1.115",
     "@popperjs/core": "2.11.8",
