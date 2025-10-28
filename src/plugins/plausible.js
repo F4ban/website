@@ -1,10 +1,6 @@
-import Plausible from "plausible-tracker";
+import { init } from '@plausible-analytics/tracker';
 
-export const plausible = Plausible({
-  apiHost: import.meta.env.VITE_PLAUSIBLE_HOST,
+init({
+  domain: 'markl.dev',
+  endpoint: 'https://track.markl.dev/api/event',
 });
-
-if (import.meta.env.VITE_PLAUSIBLE_HOST) {
-  plausible.enableAutoPageviews();
-  plausible.enableAutoOutboundTracking();
-}
