@@ -30,23 +30,11 @@ const index = ref(null);
 let timeout = null;
 
 const backgrounds = [
-  "https://images.unsplash.com/photo-1544931170-3ca1337cce88?auto=compress,enhance,format&cs=tinysrgb&w=1920&h=1080&fit=crop",
-  "https://images.unsplash.com/photo-1545112719-ce81d7de0b71?auto=compress,enhance,format&cs=tinysrgb&w=1920&h=1080&fit=crop",
-  "https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=compress,enhance,format&cs=tinysrgb&w=1920&h=1080&fit=crop",
-  "https://images.unsplash.com/photo-1548092372-0d1bd40894a3?auto=compress,enhance,format&cs=tinysrgb&w=1920&h=1080&fit=crop",
-  "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=compress,enhance,format&cs=tinysrgb&w=1920&h=1080&fit=crop",
-  "https://images.unsplash.com/photo-1480506132288-68f7705954bd?auto=compress,format&cs=tinysrgb&w=1920&h=1080&fit=crop",
-  "https://images.unsplash.com/photo-1480506404747-355771880b86?auto=compress,format&cs=tinysrgb&w=1920&h=1080&fit=crop",
-  "https://images.unsplash.com/photo-1489257900339-13e688fb85fd?auto=compress,format&cs=tinysrgb&w=1920&h=1080&fit=crop",
-  "https://images.unsplash.com/photo-1496674205429-924b32acd421?auto=compress,enhance,format&cs=tinysrgb&w=1920&h=1080&fit=crop&crop=focalpoint&fp-y=0",
-  "https://images.unsplash.com/photo-1505238680356-667803448bb6?auto=compress,enhance,format&cs=tinysrgb&w=1920&h=1080&fit=crop",
-  "https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?auto=compress,format&cs=tinysrgb&w=1920&h=1080&fit=crop&crop=focalpoint&fp-y=1",
-  "https://images.unsplash.com/photo-1509910387569-734a87698588?auto=compress,enhance,format&cs=tinysrgb&w=1920&h=1080&fit=crop",
-  "https://images.unsplash.com/photo-1509910513818-4d13fdaf89c9?auto=compress,enhance,format&cs=tinysrgb&w=1920&h=1080&fit=crop",
-  "https://images.unsplash.com/photo-1509910615591-5d2b5391393b?auto=compress,enhance,format&cs=tinysrgb&w=1920&h=1080&fit=crop",
-  "https://images.unsplash.com/photo-1519876217051-4449feb0b589?auto=compress,enhance,format&cs=tinysrgb&w=1920&h=1080&fit=crop",
-  "https://images.unsplash.com/photo-1609603078807-cf61d4f77e94?auto=compress,enhance,format&cs=tinysrgb&w=1920&h=1080&fit=crop",
-  "https://images.unsplash.com/photo-1624696941338-934bf86c28b4?auto=compress,enhance,format&cs=tinysrgb&w=1920&h=1080&fit=crop",
+  "/images/background/bg1.webp",
+  "/images/background/bg2.webp",
+  "/images/background/bg3.webp",
+  "/images/background/bg4.webp",
+  "/images/background/bg5.webp",
 ];
 
 onActivated(() => {
@@ -93,6 +81,6 @@ const stopTimeout = () => {
 .background-image {
   background-size: cover;
   background-position: center;
-  opacity: 0.4;
+  opacity: 0.3;
 }
 </style>
