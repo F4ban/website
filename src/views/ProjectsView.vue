@@ -180,4 +180,50 @@ projects.value = projectsData.map((project) => {
   margin-bottom: 0;
   padding-left: 0;
 }
+.card {
+  border: 5px solid #2e3440; /* Nord dark gray */
+  border-radius: 0.75rem;
+  background-color: #1a1a1a;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: fit;
+  object-position: center;
+  background-color: #1a1a1a;
+  display: block;
+  /* Add fading / desaturation */
+  filter: grayscale(20%) brightness(80%); /* adjust percentages as needed */
+}
+
+.card-footer {
+  background-color: #3b4252; /* Nord gray-blue */
+  color: #d8dee9;
+  text-align: center;
+  padding: 0.75rem;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect for card links affecting footer */
+.card-footer:hover {
+  background-color: #434c5e; /* slightly lighter hover tone */
+}
+
+.tags {
+  margin: 0.75rem 0 0 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.tags li {
+  color: #000;
+  font-weight: 500;
+}
 </style>
