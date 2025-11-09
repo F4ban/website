@@ -89,20 +89,69 @@ import { ref, shallowRef } from "vue";
 import GitHubIcon from "~icons/simple-icons/github";
 import GlobeIcon from "~icons/mdi/web";
 
-//only tmp
-const projectsData = [];
-//const projectsData = [
-//  {
-//    id: 1,
-//    name: "Mini solar station",
-//    url: "https://solar.markl.dev",
-//    description: "800w solar power station monitoring with Prometheus and Grafana",
-//    image: "",
-//    tags: [
-//      { title: "Docker", color: "#f0db4f" },
-//    ],
-//  },
-//];
+const tagColors = {
+  C: "#3b82f6",
+  Grafana: "#f59e0b",
+  Prometheus: "#ef4444",
+  Docker: "#0ea5e9",
+  Linux: "#475569",
+  Vuejs: "#10b981",
+  GitHubWorkflows: "#6b7280",
+  Nginx: "#16a34a",
+};
+
+const projectsData = [
+  {
+    id: 1,
+    name: "Mini Solar Station",
+    url: "https://solar.markl.dev",
+    description:
+      "Monitoring a microinverter by scraping data from its web interface, converting it into Prometheus metrics and visualizing it with Grafana.",
+    image: "/images/projects/grafana.webp",
+    tags: [
+      { title: "Grafana", color: tagColors.Grafana },
+      { title: "Prometheus", color: tagColors.Prometheus },
+      { title: "Docker", color: tagColors.Docker },
+    ],
+  },
+  {
+    id: 2,
+    name: "DWL Dynamic Window Manager",
+    url: "https://github.com/F4ban/dwl",
+    description:
+      "Personal fork of the dynamic tiling window manager DWL for Linux and FreeBSD.",
+    image: "/images/projects/dwl.webp",
+    tags: [
+      { title: "Linux", color: tagColors.Linux },
+      { title: "C", color: tagColors.C },
+    ],
+  },
+  {
+    id: 3,
+    name: "Portfolio Website",
+    url: "https://markl.dev",
+    description:
+      "This website, built with Vue.js and GitHub Workflows for automated building and testing.",
+    image: "/images/thumb.png",
+    tags: [
+      { title: "Vue.js", color: tagColors.Vuejs },
+      { title: "GitHub Workflows", color: tagColors.GitHubWorkflows },
+      { title: "Docker", color: tagColors.Docker },
+    ],
+  },
+  {
+    id: 4,
+    name: "High Availability Weather Service",
+    url: "https://wetter.markl.dev",
+    description:
+      "A weather station connected to WeeWX, generating static pages served through redundant Nginx web servers.",
+    image: "/images/projects/weewx.webp",
+    tags: [
+      { title: "Nginx", color: tagColors.Nginx },
+      { title: "Docker", color: tagColors.Docker },
+    ],
+  },
+];
 
 const projects = shallowRef([]);
 const loading = ref(false);
