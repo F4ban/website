@@ -33,9 +33,13 @@
                   <div v-if="error" class="alert alert-danger" role="alert">
                     Failed to send message. Please try again later.
                   </div>
-                  <div v-else-if="success" class="alert alert-success" role="alert">
-                    Your message has not been sent. Still working on my private E-Mail Server.
-                    Sorry!
+                  <div
+                    v-else-if="success"
+                    class="alert alert-success"
+                    role="alert"
+                  >
+                    Your message has not been sent. Still working on my private
+                    E-Mail Server. Sorry!
                   </div>
                 </div>
                 <!--Name-->
@@ -58,7 +62,9 @@
                 </div>
                 <!--Email-->
                 <div class="form-group mb-3">
-                  <label for="emailInput" class="form-label">Email Address</label>
+                  <label for="emailInput" class="form-label"
+                    >Email Address</label
+                  >
                   <div class="input-group">
                     <div class="input-group-text">
                       <at-icon fixed-width />
@@ -98,7 +104,11 @@
                 <!-- Button -->
                 <div class="form-group mb-3">
                   <button class="btn btn-outline-primary">
-                    <refresh-icon v-if="loading" class="icon-spin" fixed-width />
+                    <refresh-icon
+                      v-if="loading"
+                      class="icon-spin"
+                      fixed-width
+                    />
                     <send-icon v-else fixed-width />
                     Send
                   </button>

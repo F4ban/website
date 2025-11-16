@@ -36,7 +36,11 @@
               :style="{ transitionDelay: `${i * 70}ms` }"
             >
               <template v-if="project.image">
-                <a :href="project.url" class="card-link overflow-hidden" target="_blank">
+                <a
+                  :href="project.url"
+                  class="card-link overflow-hidden"
+                  target="_blank"
+                >
                   <img
                     :src="project.image"
                     class="card-img-top"
@@ -47,7 +51,10 @@
               <div class="card-body d-flex flex-column">
                 <h2 class="card-title h4">{{ project.name }}</h2>
                 <!-- eslint-disable vue/no-v-html -->
-                <p class="card-description mb-auto text-start" v-html="project.description" />
+                <p
+                  class="card-description mb-auto text-start"
+                  v-html="project.description"
+                />
                 <div>
                   <h3 class="visually-hidden">Tags</h3>
                   <ul class="tags">
@@ -166,7 +173,9 @@ projects.value = projectsData.map((project) => {
   return {
     ...project,
     icon,
-    pretty_url: project.url.replace(/^(\w+:)?\/\//, "").replace(/^github\.com\//, ""),
+    pretty_url: project.url
+      .replace(/^(\w+:)?\/\//, "")
+      .replace(/^github\.com\//, ""),
     image,
     expand: {
       tags: project.tags.sort((a, b) => a.title.localeCompare(b.title)),

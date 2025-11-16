@@ -1,6 +1,6 @@
-import { init } from '@plausible-analytics/tracker';
+import { init } from "@plausible-analytics/tracker";
 
 init({
-  domain: 'markl.dev',
-  endpoint: 'https://track.markl.dev/api/event',
+  domain: "markl.dev",
+  endpoint: "https://track.markl.dev/api/event",
 });

@@ -1,6 +1,8 @@
 <template>
   <span>
-    <span class="visually-hidden">{{ props.modelValue }} of {{ props.total }} stars</span>
+    <span class="visually-hidden"
+      >{{ props.modelValue }} of {{ props.total }} stars</span
+    >
     <span
       aria-hidden="true"
       :title="`${props.modelValue} star${props.modelValue === 1 ? '' : 's'}`"

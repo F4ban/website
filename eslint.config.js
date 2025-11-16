@@ -11,7 +11,10 @@ export default [
   pluginPrettier,
   {
     rules: {
-      "no-unused-vars": ["error", { varsIgnorePattern: "^_", argsIgnorePattern: "^_" }],
+      "no-unused-vars": [
+        "error",
+        { varsIgnorePattern: "^_", argsIgnorePattern: "^_" },
+      ],
       "vue/no-template-shadow": "off",
     },
   },

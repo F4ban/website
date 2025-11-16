@@ -58,7 +58,9 @@ const toggleNav = (show) => {
 </script>
 
 <template>
-  <a class="visually-hidden-focusable btn btn-primary position-absolute" href="#content"
+  <a
+    class="visually-hidden-focusable btn btn-primary position-absolute"
+    href="#content"
     >Skip to main content</a
   >
 
@@ -82,28 +84,48 @@ const toggleNav = (show) => {
         <menu-icon />
         Menu
       </button>
-      <div id="navbarResponsive" ref="navbarResponsive" class="collapse navbar-collapse">
+      <div
+        id="navbarResponsive"
+        ref="navbarResponsive"
+        class="collapse navbar-collapse"
+      >
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <router-link to="/about" class="nav-link rounded" @click="toggleNav(false)">
+            <router-link
+              to="/about"
+              class="nav-link rounded"
+              @click="toggleNav(false)"
+            >
               <info-icon />
               About
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/skills" class="nav-link rounded" @click="toggleNav(false)">
+            <router-link
+              to="/skills"
+              class="nav-link rounded"
+              @click="toggleNav(false)"
+            >
               <list-icon />
               Skills
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/projects" class="nav-link rounded" @click="toggleNav(false)">
+            <router-link
+              to="/projects"
+              class="nav-link rounded"
+              @click="toggleNav(false)"
+            >
               <code-icon />
               Projects
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/connect" class="nav-link rounded" @click="toggleNav(false)">
+            <router-link
+              to="/connect"
+              class="nav-link rounded"
+              @click="toggleNav(false)"
+            >
               <mail-icon />
               Connect
             </router-link>
@@ -134,7 +156,9 @@ const toggleNav = (show) => {
       <footer v-show="!minimal" class="mt-auto">
         <div class="container">
           <div class="row text-center">
-            <div class="col-sm text-sm-start" aria-hidden="true">&lt;/ markl.dev &gt;</div>
+            <div class="col-sm text-sm-start" aria-hidden="true">
+              &lt;/ markl.dev &gt;
+            </div>
             <div class="col-sm">
               <a href="https://github.com/f4ban"
                 ><github-icon class="me-1" fixed-width fill />View on Github</a

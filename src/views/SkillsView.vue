@@ -8,7 +8,8 @@
       </div>
       <div class="row mb-4">
         <div class="col-md-9 mx-auto">
-          A list of skills and toolsets that I'm proficient in on a scale of 1-5 stars.
+          A list of skills and toolsets that I'm proficient in on a scale of 1-5
+          stars.
         </div>
       </div>
       <div v-if="loading" class="row">
@@ -23,7 +24,11 @@
           {{ error }}
         </div>
       </div>
-      <section v-for="{ title, skills } in skillsCategories" v-else :key="title">
+      <section
+        v-for="{ title, skills } in skillsCategories"
+        v-else
+        :key="title"
+      >
         <div class="row mb-2">
           <div class="col">
             <h2 class="h3">{{ title }}</h2>
@@ -42,15 +47,25 @@
               :class="[i === 0 ? 'ms-lg-auto me-lg-0' : 'me-md-auto ms-lg-0']"
             >
               <ul class="list-group list-group-inverse">
-                <li v-for="(skill, j) in chunk" :key="skill.title" class="list-group-item">
+                <li
+                  v-for="(skill, j) in chunk"
+                  :key="skill.title"
+                  class="list-group-item"
+                >
                   <transition name="fade" appear>
-                    <div class="row" :style="{ transitionDelay: `${i * 250 + j * 50}ms` }">
+                    <div
+                      class="row"
+                      :style="{ transitionDelay: `${i * 250 + j * 50}ms` }"
+                    >
                       <div class="col text-start">
                         {{ skill.title }}
                       </div>
                       <div class="col-auto">
                         <div class="float-end">
-                          <StarRating v-model="skill.rating" class="text-primary" />
+                          <StarRating
+                            v-model="skill.rating"
+                            class="text-primary"
+                          />
                         </div>
                       </div>
                     </div>
