@@ -15,7 +15,7 @@
     "@fontsource/zilla-slab": "5.0.14",
     "@iconify-json/material-symbols": "1.1.89",
     "@iconify-json/mdi": "1.2.3",
-    "@iconify-json/simple-icons": "1.1.115",
+    "@iconify-json/simple-icons": "1.2.59",
     "@popperjs/core": "2.11.8",
     "@vitejs/plugin-vue": "6.0.1",
     "autoprefixer": "10.4.21",
