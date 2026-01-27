@@ -8,7 +8,7 @@
       </div>
       <div class="row mb-3">
         <div class="col-auto me-auto text-start">
-          <div class="p-3 float-md-end d-block mx-auto" style="width: 190px">
+          <div class="p-3 float-md-end d-block mx-auto" style="width: 250px">
             <img
               class="img-fluid rounded-4"
               src="../assets/me.jpg"
@@ -17,20 +17,19 @@
           </div>
           <p>Hi! I'm Fabian.</p>
           <p>
-            I am an IT Specialist in Systems Administration, currently employed
-            at HalloWelt! GmbH. I'm passionate about automating processes,
-            crafting innovative solutions, and staying up-to-date with the
-            latest technologies. My expertise lies in network and server
-            administration ensuring that all IT systems function smoothly and
-            efficiently. I enjoy exploring new ideas and tinkering with
-            self-hosted home infrastructure. My
-            <router-link to="/projects">project</router-link> page showcases
-            some of my most notable works.
+            I’m an IT Specialist focused on Systems Administration and DevOps,
+            currently working at HalloWelt! GmbH. I have a strong passion for
+            optimizing processes through automation and building creative,
+            tech-driven solutions. When I’m not tackling challenges at work, I
+            love experimenting with self-hosted infrastructure and diving into
+            emerging technologies. You can explore some of my home
+            <router-link to="/projects">projects</router-link>.
           </p>
           <p>
             At HalloWelt!, I administrate and deploy BlueSpice, a open source
-            wiki software based on MediaWiki. It is especially developed for
-            businesses as an enterprise wiki and used in over 150 countries.
+            wiki software built on MediaWiki. Tailored for enterprise use,
+            BlueSpice serves worldwide as a robust knowledge management
+            solution, and is utilized in over 150 countries.
           </p>
           <p>
             <router-link to="/connect">Feel free to reach out!</router-link>
