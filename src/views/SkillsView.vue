@@ -93,8 +93,9 @@
 
 <script setup>
 import { useAsyncState } from "@vueuse/core";
-import StarRating from "../components/StarRating.vue";
-import pb from "../plugins/pocketbase.js";
+import StarRating from "@/components/StarRating.vue";
+import pb from "@/plugins/pocketbase";
+
 
 const { state, isLoading, error } = useAsyncState(async () => {
   try {
