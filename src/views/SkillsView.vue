@@ -96,7 +96,6 @@ import { useAsyncState } from "@vueuse/core";
 import StarRating from "@/components/StarRating.vue";
 import pb from "@/plugins/pocketbase";
 
-
 const { state, isLoading, error } = useAsyncState(async () => {
   try {
     const response = await pb.collection("skill_headings").getFullList({
