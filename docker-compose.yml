@@ -76,3 +76,11 @@ services:
       # - ENABLE_EMAIL_VERIFICATION
       # web: https://github.com/plausible/community-edition/wiki/configuration#web
       - HTTP_PORT=8000
+
+  pocketbase:
+    build:
+      context: ./backend
+    container_name: pocketbase
+    volumes:
+      - ./pb_data:/pb/pb_data
+    restart: always

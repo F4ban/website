@@ -38,7 +38,7 @@
         <div class="text-center my-4">
           <img
             class="img-fluid"
-            src="https://api.markl.dev/?username=F4ban&show_icons=true&theme=transparent&rank_icon=percentile"
+            src="https://api.markl.dev/github-stats?username=F4ban&show_icons=true&theme=transparent&rank_icon=percentile"
             alt="GitHub Stats"
             loading="lazy"
           />
