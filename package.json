@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@fontsource/zilla-slab": "5.0.14",
-    "@iconify-json/material-symbols": "1.1.89",
+    "@iconify-json/material-symbols": "1.2.53",
     "@iconify-json/mdi": "1.2.3",
     "@iconify-json/simple-icons": "1.2.59",
     "@plausible-analytics/tracker": "0.4.3",
