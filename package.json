@@ -22,7 +22,7 @@
     "@vueuse/core": "13.9.0",
     "autoprefixer": "10.4.21",
     "bootstrap": "5.3.8",
-    "pocketbase": "0.25.2",
+    "pocketbase": "0.26.8",
     "sass": "1.77.8",
     "unplugin-icons": "23.0.1",
     "vite": "7.3.1",
